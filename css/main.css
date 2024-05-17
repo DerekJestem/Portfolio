@@ -177,7 +177,7 @@ footer {
     align-items: center;
     gap: 25px;
     padding: 5px 20px;
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 }
 
