@@ -1,5 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {    /* variables */
+    /* colors */
+
+    --color-main: rgb(135, 15, 255);
+    --color-main-light: rgb(200, 150, 255);
+    --color-dark: rgb(15, 15, 15);
+    --color-dark-translucent: rgba(25, 25, 25, 0.75);
+    --color-light: rgb(245, 240, 235); 
+    --white-25:  rgba(255, 255, 255, 0.25);
+    --white-50:  rgba(255, 255, 255, 0.5);
+    --white-75:  rgba(255, 255, 255, 0.75);
+
+    /* fonts big */
+    --big1: 32px;
+    --big2: 42px;
+    --big3: 52px;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--main-color-dark-gray);
+    width: 12px;
+    background-color: var(--color-dark);
+    outline: 2px solid var(--color-dark);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: rgb(85, 85, 85);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    outline: 3.5px solid var(--color-dark);
+    outline-offset: -2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(85, 85, 85);}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,6 +48,75 @@
 
 html {
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(15, 15, 15);
+    background-color: var(--color-dark);
     color: white;
+    scroll-behavior: smooth;
+}
+
+.main-section-light, .main-section-dark {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 25px;
+}
+
+.main-section-light {
+    background-color: var(--color-light);
+    color: black;
+}
+
+.main-section-dark {
+    background-color: var(--color-dark);
+    color: white;
+}
+
+.main-section-light .content, .main-section-dark .content {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.div-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hyperlink-light {
+    text-decoration: none;
+    color: var(--color-main-light);
+    transition: 0.25s ease;
+}
+
+.hyperlink-light:hover {
+    color: var(--color-main);
+}
+
+.hyperlink-dark {
+    text-decoration: none;
+    color: var(--color-main);
+    transition: 0.25s ease;
+}
+
+.hyperlink-dark:hover {
+    color: var(--color-main-light);
+}
+
+@media (max-width: 1024px) {
+    .main-section-light .content, .main-section-dark .content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-section-light, .main-section-dark {
+        padding: 100px 5px;
+    }
+
+    .main-section-light .content, .main-section-dark .content {
+        width: 95%;
+    }
 }
