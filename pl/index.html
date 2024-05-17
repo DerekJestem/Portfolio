@@ -17,27 +17,29 @@
     <script src="../js/particles/particles.js"></script>
     <script src="../js/particles/app.js"></script>
     <header>
-        <h1 class="header-title">
+        <div class="header-title">
             <div class="logo div-image"></div>
-            <span class="thick">Derek</span>
-            <span class="thin">Portfolio</span>
-        </h1>
+            <div class="texts">
+                <span class="thick">Derek</span>
+                <span class="thin">Portfolio</span>
+            </div>
+        </div>
         <nav>
-            <a href="">Główna</a>
-            <a href="">O mnie</a>
-            <a href="">Portfolio</a>
-            <a href="">Współpraca</a>
-            <a href="">Kontakt</a>
+            <a href="#">Główna</a>
+            <a href="#aboutme">O mnie</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#collaboration">Współpraca</a>
+            <a href="#contact">Kontakt</a>
         </nav>
         <button class="mobile-nav-button" onclick="toggleMenu()">☰</button>
     </header>
     <div class="mobile-menu" id="mobile-menu">
         <div class="mobile-nav">
             <a onclick="toggleMenu()" href="#">Główna</a>
-            <a onclick="toggleMenu()" href="">O mnie</a>
-            <a onclick="toggleMenu()" href="">Portfolio</a>
-            <a onclick="toggleMenu()" href="">Współpraca</a>
-            <a onclick="toggleMenu()" href="">Kontakt</a>
+            <a onclick="toggleMenu()" href="#aboutme">O mnie</a>
+            <a onclick="toggleMenu()" href="#portfolio">Portfolio</a>
+            <a onclick="toggleMenu()" href="#collaboration">Współpraca</a>
+            <a onclick="toggleMenu()" href="#contact">Kontakt</a>
         </div>
     </div>
     <main>
@@ -47,14 +49,24 @@
                 <p>Strona jest w trakcie tworzenia</p>
             </div>
         </section>
-        <section class="main-section-light">
+        <section class="main-section-light" id="aboutme">
             <div class="content">
                 <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda eveniet ratione totam quod? Porro ut numquam aliquam dolore magnam, vitae aliquid eaque corrupti veniam eligendi modi voluptatibus doloribus libero.</p>
             </div>
         </section>
-        <section class="main-section-dark">
+        <section class="main-section-dark" id="portfolio">
             <div class="content">
                 <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatum doloribus modi iure? Tempore cum ipsum ratione libero dignissimos id sint, dicta optio perspiciatis ex necessitatibus ut eius fuga commodi!</p>
+            </div>
+        </section>
+        <section class="main-section-light" id="collaboration">
+            <div class="content">
+                <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda eveniet ratione totam quod? Porro ut numquam aliquam dolore magnam, vitae aliquid eaque corrupti veniam eligendi modi voluptatibus doloribus libero.</p>
+            </div>
+        </section>
+        <section class="main-section-dark" id="contact">
+            <div class="content">
+                <p>Zapytania biznesowe: <a class="hyperlink-light" href="mailto: biznes.derek@gmail.com">biznes.derek@gmail.com</a></p>
             </div>
         </section>
     </main>
@@ -62,7 +74,27 @@
     <script src="../js/particles/footer-particles.js"></script>
     <script src="../js/particles/footer-app.js"></script>
     <footer>
-        <p>Zapytania biznesowe: <a class="hyperlink-light" href="mailto: biznes.derek@gmail.com">biznes.derek@gmail.com</a></p>
+        <div class="info-row">
+            <div class="footer-title column">
+                <div class="logo div-image"></div>
+                <div class="texts">
+                    <span class="thick">Derek</span>
+                    <span class="thin">Portfolio</span>
+                </div>
+            </div>
+            <div class="nav column">
+                <a href="./privacy-policy.html">Polityka prywatności</a>
+                <a href="#">Powrót na górę strony</a>
+            </div>
+            <div class="socials column">
+                <a class="element div-image" id="instagram" href=""></a>
+                <a class="element div-image" id="discord" href=""></a>
+                <a class="element div-image" id="github" href=""></a>
+            </div>
+        </div>
+        <div class="copyright-row">
+            <small>Copyright © 2024 Wszystkie prawa zastrzeżone.</small>
+        </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

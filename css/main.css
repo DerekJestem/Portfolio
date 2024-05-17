@@ -43,19 +43,25 @@ header .header-title {
 }
 
 header .header-title .logo {
-    width: 60px;
-    height: 60px;
-    background-image: url(../assets/favicon.png);
+    width: 75px;
+    height: 75px;
     border-radius: 10px;
+    background-image: url(../assets/favicon.png);
+}
+
+header .texts {
+    display: flex;
+    flex-direction: column;
 }
 
 header .header-title .thick {
-    font-size: 42px;
+    font-weight: 700;
+    font-size: var(--big2);
 }
 
 header .header-title .thin {
-    margin-left: 15px;
     font-weight: 200;
+    font-size: 22px;
     letter-spacing: 12px;
     color: var(--white-75);
 }
@@ -170,20 +176,121 @@ header nav:hover > :not(:hover) {
 
 footer {
     width: 100%;
-    height: 120px;
+    height: 200px;
     border-top: 1px solid var(--color-dark-translucent);
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 25px;
+    gap: 15px;
     padding: 5px 20px;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 }
 
+footer .info-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .copyright-row {
+    color: var(--white-50);
+}
+
+footer .column {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+footer .footer-title .logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    background-image: url(../assets/favicon.png);
+}
+
+footer .texts {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-title .thick {
+    font-weight: 700;
+    font-size: var(--big2);
+}
+
+footer .footer-title .thin {
+    font-weight: 200;
+    font-size: 22px;
+    letter-spacing: 12px;
+    color: var(--white-75);
+}
+
+footer .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+footer .nav a {
+    color: var(--white-50);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;    
+    transition: 0.25s ease;
+}
+
+footer .nav a:hover {
+    color: white;
+    transform: scale(1.05);
+    text-shadow: 0 0 15px var(--white-50);
+}
+
+footer .socials {
+    display: flex;
+    gap: 15px;
+}
+
+footer .socials .element {
+    width: 40px;
+    height: 40px;
+    filter: grayscale(1) brightness(10);
+    transition: 0.25s ease;
+}
+
+footer .socials .element:hover {
+    filter: grayscale(0) brightness(1);
+
+}
+
+#instagram {
+    background-image: url(../assets/instagram.png);
+}
+
+#discord {
+    background-image: url(../assets/discord.png);
+}
+
+#github {
+    background-image: url(../assets/github.png);
+}
+
 .footer-particles {
     width: 100%;
-    height: 120px;
+    height: 200px;
     position: absolute;
 }
 
