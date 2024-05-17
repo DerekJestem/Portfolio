@@ -1,0 +1,88 @@
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-box {
+    width: 100%;
+    max-width: 400px;
+    background-color: #2c2c2c;
+    padding: 30px;
+    border: 1px solid rgb(75, 75, 75);
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 5px;
+}
+
+.heading {
+    text-align: center;
+}
+
+#msg {
+    text-align: center;
+}
+
+.langs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.lang-button {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(56, 56, 56);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgb(75, 75, 75);
+    transition: 0.25s ease;
+    flex-grow: 1;
+}
+
+.lang-button:hover {
+    background-color: rgb(75, 75, 75);
+    transform: scale(1.05);
+
+}
+
+.langs:hover > :not(:hover) {
+    filter: opacity(0.5);
+    transform: scale(0.95);
+}
+
+.flag {
+    height: 35px;
+    aspect-ratio: 1/1;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    font-size: 18px;
+}
+
+#en {
+    background-image: url(../assets/flag-en.png);
+}
+
+#pl {
+    background-image: url(../assets/flag-pl.png);
+}
