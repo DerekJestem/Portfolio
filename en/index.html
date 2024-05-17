@@ -17,34 +17,36 @@
     <script src="../js/particles/particles.js"></script>
     <script src="../js/particles/app.js"></script>
     <header>
-        <h1 class="header-title">
+        <div class="header-title">
             <div class="logo div-image"></div>
-            <span class="thick">Derek</span>
-            <span class="thin">Portfolio</span>
-        </h1>
+            <div class="texts">
+                <span class="thick">Derek</span>
+                <span class="thin">Portfolio</span>
+            </div>
+        </div>
         <nav>
-            <a href="">Home</a>
-            <a href="">About me</a>
-            <a href="">Portfolio</a>
-            <a href="">Collaboration</a>
-            <a href="">Contact</a>
+            <a href="#">Main</a>
+            <a href="#aboutme">About me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#collaboration">Collaboration</a>
+            <a href="#contact">Contact</a>
         </nav>
         <button class="mobile-nav-button" onclick="toggleMenu()">☰</button>
     </header>
     <div class="mobile-menu" id="mobile-menu">
         <div class="mobile-nav">
-            <a onclick="toggleMenu()" href="#">Home</a>
-            <a onclick="toggleMenu()" href="">About</a>
-            <a onclick="toggleMenu()" href="">Portfolio</a>
-            <a onclick="toggleMenu()" href="">Collaboration</a>
-            <a onclick="toggleMenu()" href="">Contact</a>
+            <a onclick="toggleMenu()" href="#">Main</a>
+            <a onclick="toggleMenu()" href="#aboutme">About me</a>
+            <a onclick="toggleMenu()" href="#portfolio">Portfolio</a>
+            <a onclick="toggleMenu()" href="#collaboration">Collaboration</a>
+            <a onclick="toggleMenu()" href="#contact">Contact</a>
         </div>
     </div>
     <main>
         <section class="banner">
             <div class="content">
-                <h1>Derek's Portfolio</h1>
-                <p>This site is under construction.</p>
+                <h1>Portfolio web site</h1>
+                <p>This page is under construction.</p>
             </div>
         </section>
         <section class="main-section-light" id="aboutme">
@@ -85,15 +87,15 @@
                 <a href="#">Back to top</a>
             </div>
             <div class="socials column">
-                <a class="element div-image" id="instagram" href=""></a>
-                <a class="element div-image" id="discord" href=""></a>
-                <a class="element div-image" id="github" href=""></a>
+                <a class="element div-image" id="instagram" target="_blank" href="https://www.instagram.com/derekjestem/"></a>
+                <a class="element div-image" id="discord" target="_blank" href="https://discord.com/invite/gpA4VbHSUZ"></a>
+                <a class="element div-image" id="github" target="_blank" href="https://github.com/DerekJestem"></a>
             </div>
         </div>
         <div class="copyright-row">
-            <small>Copyright © 2024 All rights reserved.
-            </small>
+            <small>Copyright © 2024 All rights reserved.</small>
         </div>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
