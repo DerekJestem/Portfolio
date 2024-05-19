@@ -28,7 +28,6 @@
             <a href="#">Główna</a>
             <a href="#aboutme">O mnie</a>
             <a href="#portfolio">Portfolio</a>
-            <a href="#collaboration">Współpraca</a>
             <a href="#contact">Kontakt</a>
         </nav>
         <button class="mobile-nav-button" onclick="toggleMenu()">☰</button>
@@ -38,7 +37,6 @@
             <a onclick="toggleMenu()" href="#">Główna</a>
             <a onclick="toggleMenu()" href="#aboutme">O mnie</a>
             <a onclick="toggleMenu()" href="#portfolio">Portfolio</a>
-            <a onclick="toggleMenu()" href="#collaboration">Współpraca</a>
             <a onclick="toggleMenu()" href="#contact">Kontakt</a>
         </div>
     </div>
@@ -49,24 +47,63 @@
                 <p>Strona jest w trakcie tworzenia</p>
             </div>
         </section>
-        <section class="main-section-light" id="aboutme">
+        <section class="main-section-light sliders">
+            <div class="content slider-container">
+                <div class="moving-object obj01"></div>
+                <div class="moving-object obj02"></div>
+                <div class="moving-object obj03"></div>
+                <div class="moving-object obj04"></div>
+                <div class="moving-object obj05"></div>
+                <div class="moving-object obj06"></div>
+                <div class="moving-object obj07"></div>
+                <div class="moving-object obj08"></div>
+                <div class="moving-object obj09"></div>
+                <div class="moving-object obj10"></div>
+                <div class="moving-object obj11"></div>
+                <div class="moving-object obj12"></div>              
+            </div>
+        </section>
+        <section class="main-section-dark aboutme" id="aboutme">
             <div class="content">
                 <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda eveniet ratione totam quod? Porro ut numquam aliquam dolore magnam, vitae aliquid eaque corrupti veniam eligendi modi voluptatibus doloribus libero.</p>
             </div>
         </section>
-        <section class="main-section-dark" id="portfolio">
+        <section class="main-section-light portfolio" id="portfolio">
             <div class="content">
-                <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatum doloribus modi iure? Tempore cum ipsum ratione libero dignissimos id sint, dicta optio perspiciatis ex necessitatibus ut eius fuga commodi!</p>
+                <div class="element el01" data-aos="fade-up"></div>
+                <div class="element el02" data-aos="fade-up"></div>
+                <div class="element el03" data-aos="fade-up"></div>
+                <div class="element el04" data-aos="fade-up"></div>
+                <div class="element el05" data-aos="fade-up"></div>
+                <div class="element el06" data-aos="fade-up"></div>
+                <div class="element el07" data-aos="fade-up"></div>
+                <div class="element el08" data-aos="fade-up"></div>
+                <div class="element el09" data-aos="fade-up"></div>
+                <div class="element el10" data-aos="fade-up"></div>
+                <div class="element el11" data-aos="fade-up"></div>
+                <div class="element el12" data-aos="fade-up"></div>
             </div>
         </section>
-        <section class="main-section-light" id="collaboration">
+        <section class="main-section-dark contact" id="contact">
             <div class="content">
-                <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda eveniet ratione totam quod? Porro ut numquam aliquam dolore magnam, vitae aliquid eaque corrupti veniam eligendi modi voluptatibus doloribus libero.</p>
-            </div>
-        </section>
-        <section class="main-section-dark" id="contact">
-            <div class="content">
-                <p>Zapytania biznesowe: <a class="hyperlink-light" href="mailto: biznes.derek@gmail.com">biznes.derek@gmail.com</a></p>
+                <h1 class="contact-heading" data-aos="fade-up">Kontakt</h1>
+                <p class="contact-subheading" data-aos="fade-up">Masz pytanie lub chcesz nawiązać współpracę? Napisz tutaj</p>
+                <div class="methods">
+                    <a class="container contact-email" href="mailto: biznes.derek@gmail.com" target="_blank" data-aos="fade-up">
+                        <div class="contact-thumbnail div-image"></div>
+                        <div class="contact-container-content">
+                            <h1 class="contact-container-heading">E-mail</h1>
+                            <p class="contact-container-subheading">biznes.derek@gmail.com</p>
+                        </div>
+                    </a>
+                    <a class="container contact-instagram" href="https://instagram.com/derekjestem" target="_blank" data-aos="fade-up">
+                        <div class="contact-thumbnail div-image"></div>
+                        <div class="contact-container-content">
+                            <h1 class="contact-container-heading">Instagram</h1>
+                            <p class="contact-container-subheading">@derekjestem</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -87,9 +124,10 @@
                 <a href="#">Powrót na górę strony</a>
             </div>
             <div class="socials column">
-                <a class="element div-image" id="instagram" target="_blank" href="https://www.instagram.com/derekjestem/"></a>
-                <a class="element div-image" id="discord" target="_blank" href="https://discord.com/invite/gpA4VbHSUZ"></a>
-                <a class="element div-image" id="github" target="_blank" href="https://github.com/DerekJestem"></a>
+                <a class="element div-image" id="linkedin" target="_blank" href="https://www.linkedin.com/in/jakub-wieczorek-16347230a/" title="LinkedIn"></a>
+                <a class="element div-image" id="instagram" target="_blank" href="https://www.instagram.com/derekjestem/" title="Instagram"></a>
+                <a class="element div-image" id="discord" target="_blank" href="https://discord.com/invite/gpA4VbHSUZ" title="Discord"></a>
+                <a class="element div-image" id="github" target="_blank" href="https://github.com/DerekJestem" title="GitHub"></a>
             </div>
         </div>
         <div class="copyright-row">

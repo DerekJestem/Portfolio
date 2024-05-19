@@ -13,3 +13,33 @@ function toggleMenu() {
         menuOpened = false
     }
 }
+
+// import { gsap } from "gsap";
+
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// // scroll
+
+// const container = document.querySelector('.slider-container')
+// const objects = gsap.utils.toArray('moving-object')
+
+// gsap.to(".moving-object", {
+//     // xPercent: -100 (objects.length - 1),
+//     // ease: 'none',
+//     // scrollTrigger: {
+//     //     trigger: 'slider-container',
+//     //     pin: true,
+//     //     scrub: 1,
+//     //     end: "+=3000"
+//     // }
+//     duration: 3,
+//     rotation: 360,
+//     scale: 2,
+//     scrollTrigger: {
+//         trigger: '.slider-container',
+//         markers: true,
+//         scrub: true
+//     }
+// })

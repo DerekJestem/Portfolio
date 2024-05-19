@@ -6,6 +6,7 @@
     --color-dark: rgb(15, 15, 15);
     --color-dark-translucent: rgba(25, 25, 25, 0.75);
     --color-light: rgb(245, 240, 235); 
+    --white-15:  rgba(255, 255, 255, 0.15);
     --white-25:  rgba(255, 255, 255, 0.25);
     --white-50:  rgba(255, 255, 255, 0.5);
     --white-75:  rgba(255, 255, 255, 0.75);
@@ -173,6 +174,224 @@ header nav:hover > :not(:hover) {
     text-align: center;
 }
 
+.portfolio .content .element {
+    min-width: 200px;
+    min-height: 200px;
+    background-color: rgb(228, 228, 228);
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 15px;
+    flex-grow: 1;
+    transition: 0.25s ease;
+}
+
+.portfolio .content .element:hover {
+    transform: scale(1.05);
+    background-color: #eeeeee;
+}
+
+.el02, .el08, .el09 {
+    max-width: 400px;
+    width: 100%;
+    /* height: 400px; */
+}
+
+.contact .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .content .contact-heading {
+    text-align: center;
+    font-size: var(--big2);
+}
+
+.contact .content .contact-subheading {
+    margin-bottom: 25px;
+}
+
+.contact .content .methods {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.contact .content .methods .container {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid var(--white-15);
+    gap: 25px;
+    color: white;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.contact .content .methods .container:hover {
+    transform: scale(1.05);
+}
+
+.contact .content .methods:hover > :not(:hover) {
+    opacity: 0.5;
+    transform: scale(0.95);
+}
+
+.contact .content .methods .container :is(.contact-thumbnail, .contact-container-heading) {
+    filter: grayscale(1) brightness(10);
+    transition: 0.25s ease;
+}
+
+.contact .content .methods .container:hover :is(.contact-thumbnail, .contact-container-heading) {
+    filter: grayscale(0) brightness(1);
+}
+
+.contact .content .methods .container:hover .contact-container-subheading {
+    color: white;
+}
+
+.contact-thumbnail {
+    width: 80px;
+    height: 80px;
+}
+
+.contact-container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.contact-container-heading {
+    font-size: var(--big2);
+}
+
+.contact-container-subheading {
+    color: var(--white-50);
+}
+
+.contact-email .contact-thumbnail {
+    background-image: url(../assets/mail.png);
+}
+
+.contact-email .contact-container-content .contact-container-heading {
+    width: max-content;
+    background: rgb(66,133,244);
+    background: linear-gradient(212deg, rgba(66,133,244,1) 0%, rgba(66,133,244,1) 20%, rgba(197,34,31,1) 21%, rgba(197,34,31,1) 29%, rgba(234,67,53,1) 30%, rgba(234,67,53,1) 64%, rgba(251,188,4,1) 65%, rgba(251,188,4,1) 81%, rgba(52,168,83,1) 82%, rgba(52,168,83,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-instagram .contact-thumbnail {
+    background-image: url(../assets/instagram.png);
+}
+
+.contact-instagram .contact-container-content .contact-container-heading {
+    width: max-content;
+    background: rgb(255,197,0);
+    background: linear-gradient(212deg, rgba(255,197,0,1) 0%, rgba(254,59,20,1) 33%, rgba(252,3,179,1) 66%, rgba(121,12,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 767px) {
+    .contact .content .methods .container {
+        flex-direction: column;
+    }
+
+    .contact-container-content {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.sliders {
+    padding: 20px 5px;
+}
+
+.sliders .content {
+    width: 100%;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes move {
+    0%  {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+.moving-object {
+    min-width: 450px;
+    max-width: 450px;
+    width: 450px;
+    height: 300px;
+    background-color: rgb(228, 228, 228);
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 15px;
+    margin: 5px;
+    animation: move 10s linear infinite;
+    /* animation-timeline: scroll(); */
+}
+
+/* .obj01 {
+    background-color: rgb(128, 0, 255);
+}
+
+.obj02 {
+    background-color: rgb(30, 255, 0);
+}
+
+.obj03 {
+    background-color: rgb(255, 217, 0);
+}
+
+.obj04 {
+    background-color: rgb(255, 136, 0);
+}
+
+.obj05 {
+    background-color: rgb(255, 0, 132);
+}
+
+.obj06 {
+    background-color: rgb(0, 8, 255);
+}
+
+.obj07 {
+    background-color: rgb(0, 255, 255);
+}
+
+.obj08 {
+    background-color: rgb(0, 255, 136);
+}
+
+.obj09 {
+    background-color: rgb(89, 255, 0);
+}
+
+.obj10 {
+    background-color: rgb(255, 255, 0);
+}
+
+.obj11 {
+    background-color: rgb(255, 128, 0);
+}
+
+.obj12 {
+    background-color: rgb(255, 0, 0);
+} */
 
 footer {
     width: 100%;
@@ -280,6 +499,10 @@ footer .socials .element:hover {
 
 }
 
+#linkedin {
+    background-image: url(../assets/linkedin.png);
+}
+
 #instagram {
     background-image: url(../assets/instagram.png);
 }
@@ -338,8 +561,3 @@ footer .socials .element:hover {
 
 }
 
-@media (max-width: 767px) {
-    
-
-    
-}
