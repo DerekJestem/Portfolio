@@ -283,6 +283,7 @@ header nav:hover > :not(:hover) {
     width: max-content;
     background: rgb(66,133,244);
     background: linear-gradient(212deg, rgba(66,133,244,1) 0%, rgba(66,133,244,1) 20%, rgba(197,34,31,1) 21%, rgba(197,34,31,1) 29%, rgba(234,67,53,1) 30%, rgba(234,67,53,1) 64%, rgba(251,188,4,1) 65%, rgba(251,188,4,1) 81%, rgba(52,168,83,1) 82%, rgba(52,168,83,1) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -295,6 +296,7 @@ header nav:hover > :not(:hover) {
     width: max-content;
     background: rgb(255,197,0);
     background: linear-gradient(212deg, rgba(255,197,0,1) 0%, rgba(254,59,20,1) 33%, rgba(252,3,179,1) 66%, rgba(121,12,255,1) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
