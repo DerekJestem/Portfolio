@@ -48,46 +48,50 @@
             </div>
         </section>
         <section class="main-section-light sliders">
-            <div class="content slider-container">
-                <div class="moving-object obj01"></div>
-                <div class="moving-object obj02"></div>
-                <div class="moving-object obj03"></div>
-                <div class="moving-object obj04"></div>
-                <div class="moving-object obj05"></div>
-                <div class="moving-object obj06"></div>
-                <div class="moving-object obj07"></div>
-                <div class="moving-object obj08"></div>
-                <div class="moving-object obj09"></div>
-                <div class="moving-object obj10"></div>
-                <div class="moving-object obj11"></div>
-                <div class="moving-object obj12"></div>              
+            <div class="content">
+                <div class="slider">
+                    <div class="moving-object obj01">Przykładowy projekt</div>
+                    <div class="moving-object obj02">Przykładowy projekt</div>
+                    <div class="moving-object obj03">Przykładowy projekt</div>
+                    <div class="moving-object obj04">Przykładowy projekt</div>
+                    <div class="moving-object obj05">Przykładowy projekt</div>
+                    <div class="moving-object obj06">Przykładowy projekt</div>
+                    <div class="moving-object obj07">Przykładowy projekt</div>
+                    <div class="moving-object obj08">Przykładowy projekt</div>
+                    <div class="moving-object obj09">Przykładowy projekt</div>
+                    <div class="moving-object obj10">Przykładowy projekt</div>
+                    <div class="moving-object obj11">Przykładowy projekt</div>
+                    <div class="moving-object obj12">Przykładowy projekt</div>   
+                </div>           
             </div>
         </section>
         <section class="main-section-dark aboutme" id="aboutme">
             <div class="content">
-                <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda eveniet ratione totam quod? Porro ut numquam aliquam dolore magnam, vitae aliquid eaque corrupti veniam eligendi modi voluptatibus doloribus libero.</p>
+                <div class="aboutme-text">
+                    <h1>O mnie</h1>
+                    <p data-aos="fade-up">Tutaj będzie znajdowała się sekcja o mnie</p>
+                </div>
+                <div class="aboutme-image"></div>
             </div>
         </section>
         <section class="main-section-light portfolio" id="portfolio">
             <div class="content">
-                <div class="element el01" data-aos="fade-up"></div>
-                <div class="element el02" data-aos="fade-up"></div>
-                <div class="element el03" data-aos="fade-up"></div>
-                <div class="element el04" data-aos="fade-up"></div>
-                <div class="element el05" data-aos="fade-up"></div>
-                <div class="element el06" data-aos="fade-up"></div>
-                <div class="element el07" data-aos="fade-up"></div>
-                <div class="element el08" data-aos="fade-up"></div>
-                <div class="element el09" data-aos="fade-up"></div>
-                <div class="element el10" data-aos="fade-up"></div>
-                <div class="element el11" data-aos="fade-up"></div>
-                <div class="element el12" data-aos="fade-up"></div>
+                <h1 id="portfolio-heading">Wybierz kategorie</h1>
+                <div class="gallery" data-aos="fade-up">
+                    <div class="gallery-tile i1">Kliknij aby przejść</div>
+                    <div class="gallery-tile i2">Kliknij aby przejść</div>
+                    <div class="gallery-tile i3">Kliknij aby przejść</div>
+                    <div class="gallery-tile i4">Kliknij aby przejść</div>
+                    <div class="gallery-tile i5">Kliknij aby przejść</div>
+                    <div class="gallery-tile i6">Kliknij aby przejść</div>
+                    <div class="gallery-tile i7">Kliknij aby przejść</div>
+                </div>
             </div>
         </section>
         <section class="main-section-dark contact" id="contact">
             <div class="content">
                 <h1 class="contact-heading" data-aos="fade-up">Kontakt</h1>
-                <p class="contact-subheading" data-aos="fade-up">Masz pytanie lub chcesz nawiązać współpracę? Napisz tutaj</p>
+                <p class="contact-subheading" data-aos="fade-up">Masz pytanie lub chcesz nawiązać współpracę? Napisz maila lub wiadomość prywatną na instagramie poprzez kliknięcie w kafelki poniżej.</p>
                 <div class="methods">
                     <a class="container contact-email" href="mailto: biznes.derek@gmail.com" target="_blank" data-aos="fade-up">
                         <div class="contact-thumbnail div-image"></div>
@@ -134,6 +138,9 @@
             <small>Copyright © 2024 Wszystkie prawa zastrzeżone.</small>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="../js/animations.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

@@ -14,6 +14,17 @@ function toggleMenu() {
     }
 }
 
+function toCategory(category) {
+    switch (category) {
+        case "magiccapes":
+            
+            break;
+    
+        default:
+            break;
+    }
+}
+
 // import { gsap } from "gsap";
 
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
