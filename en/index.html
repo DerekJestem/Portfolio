@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main.css?">
     <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
     <title>Derek - Portfolio</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -28,7 +28,6 @@
             <a href="#">Main</a>
             <a href="#aboutme">About me</a>
             <a href="#portfolio">Portfolio</a>
-            <a href="#collaboration">Collaboration</a>
             <a href="#contact">Contact</a>
         </nav>
         <button class="mobile-nav-button" onclick="toggleMenu()">☰</button>
@@ -38,35 +37,77 @@
             <a onclick="toggleMenu()" href="#">Main</a>
             <a onclick="toggleMenu()" href="#aboutme">About me</a>
             <a onclick="toggleMenu()" href="#portfolio">Portfolio</a>
-            <a onclick="toggleMenu()" href="#collaboration">Collaboration</a>
             <a onclick="toggleMenu()" href="#contact">Contact</a>
         </div>
     </div>
     <main>
         <section class="banner">
             <div class="content">
-                <h1>Portfolio web site</h1>
-                <p>This page is under construction.</p>
+                <h1>Derek's portfolio page</h1>
+                <p>This website is under construction. Visit it again in tomorrow to see new features. Soon it will be done.</p>
             </div>
         </section>
-        <section class="main-section-light" id="aboutme">
+        <section class="main-section-light sliders">
             <div class="content">
-                <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda eveniet ratione totam quod? Porro ut numquam aliquam dolore magnam, vitae aliquid eaque corrupti veniam eligendi modi voluptatibus doloribus libero.</p>
+                <div class="slider">
+                    <div class="moving-object obj01">Example project</div>
+                    <div class="moving-object obj02">Example project</div>
+                    <div class="moving-object obj03">Example project</div>
+                    <div class="moving-object obj04">Example project</div>
+                    <div class="moving-object obj05">Example project</div>
+                    <div class="moving-object obj06">Example project</div>
+                    <div class="moving-object obj07">Example project</div>
+                    <div class="moving-object obj08">Example project</div>
+                    <div class="moving-object obj09">Example project</div>
+                    <div class="moving-object obj10">Example project</div>
+                    <div class="moving-object obj11">Example project</div>
+                    <div class="moving-object obj12">Example project</div>   
+                </div>           
             </div>
         </section>
-        <section class="main-section-dark" id="portfolio">
+        <section class="main-section-dark aboutme" id="aboutme">
             <div class="content">
-                <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatum doloribus modi iure? Tempore cum ipsum ratione libero dignissimos id sint, dicta optio perspiciatis ex necessitatibus ut eius fuga commodi!</p>
+                <div class="aboutme-text">
+                    <h1>About me</h1>
+                    <p data-aos="fade-up">Soon here will be more</p>
+                </div>
+                <div class="aboutme-image"></div>
             </div>
         </section>
-        <section class="main-section-light" id="collaboration">
+        <section class="main-section-light portfolio" id="portfolio">
             <div class="content">
-                <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda eveniet ratione totam quod? Porro ut numquam aliquam dolore magnam, vitae aliquid eaque corrupti veniam eligendi modi voluptatibus doloribus libero.</p>
+                <h1 id="portfolio-heading">Choose category</h1>
+                <div class="gallery" data-aos="fade-up">
+                    <div class="gallery-tile i1">Click to go</div>
+                    <div class="gallery-tile i2">Click to go</div>
+                    <div class="gallery-tile i3">Click to go</div>
+                    <div class="gallery-tile i4">Click to go</div>
+                    <div class="gallery-tile i5">Click to go</div>
+                    <div class="gallery-tile i6">Click to go</div>
+                    <div class="gallery-tile i7">Click to go</div>
+                </div>
             </div>
         </section>
-        <section class="main-section-dark" id="contact">
+        <section class="main-section-dark contact" id="contact">
             <div class="content">
-                <p>Business inquiries: <a class="hyperlink-light" href="mailto: biznes.derek@gmail.com">biznes.derek@gmail.com</a></p>
+                <h1 class="contact-heading" data-aos="fade-up">Contact</h1>
+                <p class="contact-subheading" data-aos="fade-up">Do you have a question or want to cooperate? Write an email or private message on Instagram by clicking on the tiles below.</p>
+                <div class="methods">
+                    <a class="container contact-email" href="mailto: biznes.derek@gmail.com" target="_blank" data-aos="fade-up">
+                        <div class="contact-thumbnail div-image"></div>
+                        <div class="contact-container-content">
+                            <h1 class="contact-container-heading">E-mail</h1>
+                            <p class="contact-container-subheading">biznes.derek@gmail.com</p>
+                        </div>
+                    </a>
+                    <a class="container contact-instagram" href="https://instagram.com/derekjestem" target="_blank" data-aos="fade-up">
+                        <div class="contact-thumbnail div-image"></div>
+                        <div class="contact-container-content">
+                            <h1 class="contact-container-heading">Instagram</h1>
+                            <p class="contact-container-subheading">@derekjestem</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -83,19 +124,23 @@
                 </div>
             </div>
             <div class="nav column">
-                <a href="./privacy-policy.html">Privacy policy</a>
-                <a href="#">Back to top</a>
+                <a href="./privacy-policy.html">privacy policy</a>
+                <a href="#">Back to top of page</a>
             </div>
             <div class="socials column">
-                <a class="element div-image" id="instagram" target="_blank" href="https://www.instagram.com/derekjestem/"></a>
-                <a class="element div-image" id="discord" target="_blank" href="https://discord.com/invite/gpA4VbHSUZ"></a>
-                <a class="element div-image" id="github" target="_blank" href="https://github.com/DerekJestem"></a>
+                <a class="element div-image" id="linkedin" target="_blank" href="https://www.linkedin.com/in/jakub-wieczorek-16347230a/" title="LinkedIn"></a>
+                <a class="element div-image" id="instagram" target="_blank" href="https://www.instagram.com/derekjestem/" title="Instagram"></a>
+                <a class="element div-image" id="discord" target="_blank" href="https://discord.com/invite/gpA4VbHSUZ" title="Discord"></a>
+                <a class="element div-image" id="github" target="_blank" href="https://github.com/DerekJestem" title="GitHub"></a>
             </div>
         </div>
         <div class="copyright-row">
             <small>Copyright © 2024 All rights reserved.</small>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="../js/animations.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
